@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name= "SFDC Application Automation Suite" parallel="tests">
+	<listeners>
+		<listener class-name="com.sfdc.qa.ExtentReport.ExtentReport" />
+	</listeners>
+	<test name="SFDC TestCases CH" >
+	<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.sfdc.qa.testcases.LoginPageTest"></class>
+			<class name="com.sfdc.qa.testcases.HomePageTest"></class>
+		</classes>	
+	</test>
+<!-- 	<test name="SFDC TestCases FF" >
+	<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.sfdc.qa.testcases.LoginPageTest"></class>
+			<class name="com.sfdc.qa.testcases.HomePageTest"></class>
+		</classes>	
+	</test> -->
+</suite>
